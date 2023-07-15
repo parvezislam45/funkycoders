@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 
 type ModalProps = {
   isOpen: boolean;
   onClose: () => void;
+  children: ReactNode;
 };
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
